@@ -1,0 +1,179 @@
+﻿.mui-card {
+    margin-bottom: 0;
+    min-height: 100%;
+    position: relative;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #D3D5E2;
+    color: #3C3F4A;
+    transition-duration: 0.3s;
+
+    &:hover .mui-card__header {
+        .mui-card__item-button {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .mui-card__header {
+        padding: 12px 24px 12px 24px;
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+        border-bottom: 1px solid #D3D5E2;
+        background-color: #F8F9FB;
+        color: #3b415e;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+
+        &--row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &-section {
+            position: relative;
+        }
+
+        &-label {
+            font-size: 12px;
+            font-weight: 400;
+            color: #3C3F4A;
+            line-height: 1.2em;
+        }
+
+        &-title {
+            width: 100%;
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 3px;
+        }
+
+        .mui-card__item-icon {
+            align-self: center;
+        }
+
+        .mui-card__item-button {
+            position: absolute;
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+            right: 12px;
+            top: 7.5px;
+            visibility: hidden;
+            margin: auto;
+        }
+    }
+
+    .mui-card__field {
+        justify-content: flex-end;
+
+        &-value {
+
+            .mui-card__item-bolder {
+                display: inline-block;
+            }
+
+            .mui-card__item-mini {
+                font-size: 13px;
+                color: #697386;
+                margin-left: 4px;
+            }
+        }
+    }
+
+    .mui-card__body {
+        padding: 24px;
+        font-size: 16px;
+
+        &-value {
+            display: flex;
+            justify-content: flex-end;
+            font-size: 18px;
+            font-weight: 600;
+            color: #3C3F4A;
+
+            .mui-card__body-column {
+                flex-direction: column;
+
+                &-item {
+                    &:not(:first-child) {
+                        border-top: 1px solid $mui-color-gray;
+                        padding-top: 32px;
+                    }
+                }
+            }
+        }
+
+        .mui-card__col {
+            padding: 0 12px;
+            flex: 1 0 0;
+
+            .mui-card__col-field {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                color: #3C3F4A;
+            }
+
+            .mui-card__field-separator {
+                flex: 1;
+                margin: 0 8px;
+                margin-bottom: 5px;
+                border-bottom: 1px dotted #c1c9d2;
+                align-self: flex-end;
+            }
+
+            .mui-card__field-label, .mui-card__field-value {
+                font-size: 14px;
+                font-weight: 400;
+            }
+
+            .mui-card__field-percent {
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+
+        .mui-card__col:not(:first-child) {
+            border-left: 1px solid $mui-color-gray;
+        }
+
+        .mui-card__row {
+            display: flex;
+            flex: 1;
+
+            .mui-card__column {
+                flex: 1;
+                display: flex;
+
+                &:not(:first-child) {
+                    border-left: 1px solid $mui-color-gray;
+                    padding-left: 24px;
+                }
+
+                &:first-child {
+                    padding-right: 24px;
+                }
+            }
+
+            .mui-card__item-value {
+                font-size: 14px;
+            }
+
+            .mui-card__item-separator {
+                flex: 1;
+                margin-bottom: 5px;
+                border-bottom: 1px dotted #c1c9d2;
+                align-self: flex-end;
+            }
+
+            .mui-card__item-bolder {
+                color: #3C3F4A;
+                font-weight: 600;
+                font-size: 16px;
+                margin-right: 4px;
+                line-height: 19px;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+﻿.date-picker {
+    width: 100%;
+    text-align: left;
+    font-size: 13px;
+
+    &__container {
+        display: flex;
+
+        .caret {
+            align-self: center;
+        }
+
+        &:hover {
+            color: #333;
+            background-color: #e6e6e6;
+            border-color: #adadad;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "estado": 1,
+        "cliente": "Estratec",
+        "cuenta": "Estratec Pagos, Comerciales",
+        "noFactura": "-",
+        "fecha": "Marzo 2020",
+        "producto": "SMS",
+        "consumo": 11036
+    },
+    {
+        "id": 2,
+        "estado": 2,
+        "cliente": "Colpatria",
+        "cuenta": "Colpatria Servicios",
+        "noFactura": "-",
+        "fecha": "Marzo 2020",
+        "producto": "Email",
+        "consumo": 223
+    },
+    {
+        "id": 3,
+        "estado": 3,
+        "cliente": "Automotores Farallones SAS",
+        "cuenta": "Automotores Finanzas",
+        "noFactura": "-",
+        "fecha": "Marzo 2020",
+        "producto": "Voz",
+        "consumo": 8871
+    }
+]

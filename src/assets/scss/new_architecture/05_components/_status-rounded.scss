@@ -1,0 +1,42 @@
+﻿.mui-status-rounded {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    border: 4px solid;
+
+    &--create {
+        border-color: $mui-color-grey3;
+    }
+
+    &--canceled {
+        border-color: $mui-color-red;
+    }
+
+    &--failed {
+        border-color: $mui-color-grey2;
+    }
+
+    &--stopped {
+        border-color: $mui-color-brown;
+    }
+
+    &--programate {
+        border-color: $mui-color-dark;
+    }
+
+    &--queue {
+        border-color: $mui-color-orange;
+    }
+
+    &--finished {
+        border-color: $mui-color-green;
+    }
+
+    &--toFinish {
+        border-color: $mui-color-green-light;
+    }
+
+    &--inProcess {
+        border-color: $mui-color-blue;
+    }
+}

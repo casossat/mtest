@@ -1,0 +1,175 @@
+﻿.mui-button {
+    position: relative;
+    display: inline-block;
+    min-width: 100px;
+    text-transform: capitalize;
+    border-radius: $border-radius;
+    font-weight: 500;
+    -webkit-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+    padding: 7px 12px;
+    font-size: $mui-font-medium;
+    height: 34px;
+    max-height: 34px;
+
+    &:disabled {
+        cursor: not-allowed;
+    }
+
+    &--success {
+        background-color: $mui-color-green;
+        border: 1px solid $mui-color-green;
+        color: #FFF;
+
+        &:hover:not([disabled]) {
+            background-color: $mui-color-green2;
+            border: 1px solid $mui-color-green2;
+        }
+
+        &:disabled {
+            background-color: rgba($mui-color-green2, .6);
+            border: 0px solid transparent;
+            color: rgba(#FFF, .6);
+        }
+    }
+
+    &--success-reverse {
+        background-color: #FFF;
+        border: 1px solid $mui-color-green;
+        color: $mui-color-green;
+
+        &:hover:not([disabled]) {
+            background-color: $mui-color-green2;
+            border: 1px solid $mui-color-green2;
+            color: #FFF;
+        }
+
+        &:disabled {
+            background-color: rgba($mui-color-green2, .6);
+            border: 0px solid transparent;
+            color: rgba(#FFF, .6);
+        }
+    }
+
+    &--dark {
+        background-color: $mui-color-dark;
+        border: 1px solid $mui-color-dark;
+        color: #FFF;
+
+        &:hover:not([disabled]) {
+            background-color: $mui-color-dark2;
+            color: #FFF;
+        }
+
+        &:disabled {
+            background-color: rgba($mui-color-dark2, .6);
+            border: 0px solid transparent;
+            color: rgba(#FFF, .6);
+        }
+    }
+
+    &--dark-reverse {
+        background-color: #FFF;
+        border: 1px solid $mui-color-dark;
+        color: $mui-color-dark;
+
+        &:hover:not([disabled]) {
+            background-color: $mui-color-dark2;
+            color: #FFF;
+        }
+
+        &:disabled {
+            background-color: rgba(#FFF, .6);
+            border: 1px solid rgba($mui-color-dark2, .6);
+            color: rgba($mui-color-dark2, .6);
+        }
+    }
+
+    &--light-reverse {
+        background-color: #FFF;
+        border: 1px solid $mui-color-blue;
+        color: $mui-color-blue;
+
+        &:hover:not([disabled]) {
+            background-color: $mui-color-blue;
+            color: #FFF;
+        }
+
+        &:disabled {
+            background-color: rgba(#FFF, .6);
+            border: 1px solid rgba($mui-color-blue2, .6);
+            color: rgba($mui-color-blue2, .6);
+        }
+    }
+
+    &--light {
+        background-color: $mui-color-blue;
+        border: 1px solid $mui-color-blue;
+        color: #FFF;
+
+        &:hover:not([disabled]) {
+            background-color: $mui-color-blue2;
+            color: #FFF;
+        }
+
+        &:disabled {
+            background-color: rgba($mui-color-blue2, .6);
+            border: 0px solid transparent;
+            color: rgba(#FFF, .6);
+        }
+    }
+
+    &--danger {
+        background-color: $mui-color-red;
+        border: 1px solid $mui-color-red;
+        color: #FFF;
+
+        &:hover:not([disabled]) {
+            background-color: $mui-color-red2;
+            border: 1px solid $mui-color-red2;
+        }
+
+        &:disabled {
+            background-color: rgba($mui-color-red2, .6);
+            border: 0px solid transparent;
+            color: rgba(#FFF, .6);
+        }
+    }
+
+    &--danger-reverse {
+        background-color: #FFF;
+        border: 1px solid $mui-color-red;
+        color: $mui-color-red;
+
+        &:hover:not([disabled]) {
+            background-color: $mui-color-red2;
+            border: 1px solid $mui-color-red2;
+            color: #FFF;
+        }
+
+        &:disabled {
+            background-color: rgba($mui-color-red2, .6);
+            border: 0px solid transparent;
+            color: rgba(#FFF, .6);
+        }
+    }
+
+    &--default {
+        background-color: #FFF;
+        border: 1px solid $mui-color-gray;
+        color: #3C3F4A;
+
+        &:hover:not([disabled]) {
+            background-color: $mui-color-gray;
+            border: 0px solid transparent;
+            color: #000000;
+        }
+
+        &:disabled {
+            background-color: rgba(#FFF, .6);
+            border: 1px solid rgba($mui-color-gray2, .6);
+            color: rgba($mui-color-gray2, .6);
+        }
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "username": "testuser",
+    "firstName": "Usuario",
+    "lastName": "Prueba",
+    "email": "user@test.net",
+    "sessionToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwiZmlyc3ROYW1lIjoiVXN1YXJpbyIsImxhc3ROYW1lIjoiUHJ1ZWJhIiwiZW1haWwiOiJ1c2VyQHRlc3QubmV0In0.GO0QheHNc9icTszr7o5oGAEbZQQiSlzQlkZxYW7HAmg"
+}

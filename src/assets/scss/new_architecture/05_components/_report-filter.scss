@@ -1,0 +1,101 @@
+﻿.mui-report-filter {
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+
+    .form-group {
+        margin: 0;
+    }
+
+    .filter__container {
+        display: inline-flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+        @include border;
+        background-color: #FFF;
+    }
+
+    .filter__simple {
+        padding: 26px 28px;
+        display: inline-flex;
+    }
+
+    .filter__input {
+        display: flex;
+
+        &-item {
+            width: 274px;
+            -webkit-box-flex: 0;
+            -ms-flex: none;
+            flex: none;
+            display: flex;
+            flex-direction: column;
+            padding-right: 16px;
+
+            label {
+                color: $mui-color-dark;
+                text-transform: capitalize;
+            }
+
+            .control-label {
+                line-height: 16px;
+            }
+        }
+    }
+
+    .filter__button {
+        display: flex;
+        -ms-flex-item-align: baseline;
+        align-self: baseline;
+        margin-top: 21px;
+
+        .divider {
+            height: 24px;
+            margin: 5px 10px;
+            border-right: 1px #ccc solid;
+        }
+    }
+
+    .filter__advanced {
+        background-color: #F8F9FB;
+        width: 100%;
+        border-top: 1px solid #C8CAD4;
+
+        .advance-container__title {
+            padding: 12px 28px;
+            cursor: pointer;
+            display: flex;
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            color: $mui-color-dark;
+            flex: 1;
+
+            span {
+                font-size: 13px;
+                flex: 1;
+                font-weight: 600;
+                margin-bottom: 0;
+            }
+
+            &:hover {
+                background-color: #f0f2f5;
+            }
+        }
+
+        .advance-container__arrow {
+            align-self: center;
+
+            .fa-angle-up {
+                display: none;
+            }
+        }
+
+        .advance-container__body {
+            border-top: 1px solid #C8CAD4;
+            padding: 12px 28px;
+            background-color: #f0f2f5;
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+﻿.mui-status-bar {
+    border-radius: 60px;
+    font-size: 12px;
+    padding: 7px 23px;
+    text-transform: uppercase;
+    letter-spacing: 0.24px;
+    font-weight: 500;
+    line-height: 14px;
+
+    &--create {
+        background: $mui-color-white1;
+        border: 1px solid $mui-color-grey3;
+        color: $mui-color-grey3;
+    }
+
+    &--canceled {
+        background: $mui-color-white1;
+        border: 1px solid $mui-color-red;
+        color: $mui-color-red;
+    }
+
+    &--failed {
+        background: $mui-color-white1;
+        border: 1px solid $mui-color-grey2;
+        color: $mui-color-grey2;
+    }
+
+    &--programate {
+        background: $mui-color-white1;
+        border: 1px solid $mui-color-dark;
+        color: $mui-color-dark;
+    }
+
+    &--queue {
+        background: $mui-color-white1;
+        border: 1px solid #FF9D50;
+        color: #FF9D50;
+    }
+
+    &--finished {
+        background: $mui-color-white1;
+        border: 1px solid $mui-color-green;
+        color: $mui-color-green;
+    }
+
+    &--toFinish {
+        background: $mui-color-white1;
+        border: 1px solid $mui-color-green-light;
+        color: $mui-color-green-light;
+    }
+
+    &--inProcess {
+        background: $mui-color-white1;
+        border: 1px solid $mui-color-blue;
+        color: $mui-color-blue;
+    }
+
+    &--stopped {
+        background: $mui-color-white1;
+        border: 1px solid $mui-color-brown;
+        color: $mui-color-brown;
+    }
+}

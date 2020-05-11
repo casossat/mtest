@@ -1,0 +1,20 @@
+﻿.content-progress {
+  margin-top: 30px;
+  .img-progress {
+    height: 24px;
+    border: 1px solid #192354;
+    border-radius: 11px;
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .img-progress-bar {
+    width: 50%;
+    background: #192354;
+    height: 100%;
+    border-radius: 10px;
+  }
+  strong {
+    color: #192354;
+  }
+}

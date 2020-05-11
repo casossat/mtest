@@ -1,0 +1,252 @@
+﻿.mui-date-container {
+    max-width: 100%;
+    position: relative;
+
+    .mui-date-input {
+        display: block;
+        position: relative;
+        width: 100%;
+
+        input {
+            width: 100%;
+            max-width: 100%;
+            text-indent: 10px;
+            font-size: 14px;
+            padding: 0px 0px;
+            color: #757575;
+            background-color: #fff;
+            border: 1px solid #D3D5E2;
+            border-radius: 4px;
+            transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+            cursor: pointer;
+            height: 34px;
+            outline: none;
+
+            &:focus {
+                box-shadow: 0 0 3px rgba(102,175,233,.6);
+                border-color: #66afe9;
+            }
+        }
+    }
+
+    .mui-date-picker {
+        margin: 0 0;
+        display: flex;
+        background-color: #fff;
+        border-radius: 4px;
+        border: 1px solid #D3D5E2;
+        position: fixed;
+        z-index: 9999;
+        /* solve ie bugs*/
+        &.mui-hide {
+            display: none;
+        }
+
+        &.mui-show {
+            display: flex !important;
+        }
+
+        &.mui-is-ie,
+        &.mui-is-edge {
+            .vc-opacity-0 {
+                filter: opacity(0%);
+                opacity: 0;
+
+                .vc-highlight {
+                    height: 0;
+                    width: 0;
+                    background-color: #fff;
+                    color: #fff;
+                    border: none;
+                }
+            }
+
+            .vc-highlight {
+                height: 28px;
+
+                &.vc-highlight-base-end {
+                    height: 0px;
+                }
+
+                &.vc-rounded-full {
+                    width: 28px;
+                }
+            }
+        }
+
+        &.mui-is-ie {
+            &.mui-has-ranges {
+                &.mui-show-buttons {
+                    min-width: 570px;
+                }
+
+                min-width: 450px;
+            }
+
+            .vc-container {
+                .vc-grid-container {
+                    width: 100%;
+                    display: -ms-grid;
+
+                    &.vc-weeks {
+                        padding: 5px 6px 7px 6px;
+                    }
+
+                    .vc-day-content {
+                        min-height: 1.8rem;
+                        width: 1.8rem;
+                        height: 1.8rem;
+                        margin: 0.1rem auto;
+                    }
+                }
+            }
+        }
+
+        &:before,
+        &:after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+        }
+
+        &.mui-is-bottom {
+            margin-top: 9px;
+
+            &:before {
+                border-left: 7px solid transparent;
+                border-right: 7px solid transparent;
+                border-bottom: 7px solid #ccc;
+                border-bottom-color: rgba(0, 0, 0, 0.2);
+                top: -7px;
+                left: 7px;
+            }
+
+            &:after {
+                border-left: 6px solid transparent;
+                border-right: 6px solid transparent;
+                border-bottom: 6px solid white;
+                top: -6px;
+                left: 8px;
+            }
+        }
+
+        &.mui-is-top {
+            margin-bottom: 5px;
+
+            &:before {
+                border-left: 7px solid transparent;
+                border-right: 7px solid transparent;
+                border-top: 7px solid #ccc;
+                border-top-color: rgba(0, 0, 0, 0.2);
+                bottom: -7px;
+                left: 6px;
+            }
+
+            &:after {
+                border-left: 6px solid transparent;
+                border-right: 6px solid transparent;
+                border-top: 6px solid white;
+                bottom: -6px;
+                left: 7px;
+            }
+        }
+
+        .mui-date-selector-buttons {
+            width: 130px;
+            height: 100%;
+            padding-top: 15px;
+            color: #333;
+
+            .mui-item-button {
+                appearance: none;
+                width: 100%;
+                text-align: left;
+                text-indent: 5px;
+                background-color: #fff;
+                border: none;
+                cursor: pointer;
+                transition: .3s all ease;
+                padding: 8px 0;
+                outline: none;
+
+                &:hover {
+                    background-color: #f1f1f1;
+                }
+
+                &.mui-selected {
+                    background-color: #364177;
+                    color: #FFF;
+                }
+            }
+        }
+
+        .mui-date-selector-date {
+            min-width: 0;
+
+
+            .mui-date-calendar {
+                min-width: 0;
+                min-height: 0;
+            }
+
+            &.has-next {
+                border-left: 1px solid #D3D5E2;
+            }
+
+            .vc-container {
+                border-color: transparent;
+
+                .vc-title {
+                    text-transform: capitalize;
+                }
+            }
+        }
+
+        .mui-date-calendar-hour {
+            width: 100%;
+            display: flex;
+            padding: 10px 0;
+            border-top: 1px solid #D3D5E2;
+            text-align: center;
+
+            .mui-date-item-hour {
+                flex: 1;
+                display: block;
+            }
+        }
+    }
+}
+/* fix bugs in modals*/
+.modal-fix-calendar {
+    -webkit-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important;
+}
+
+.mui-time-picker {
+    flex: 1;
+    display: block;
+
+    .mui-time-item {
+        width: auto;
+        padding: 3px 5px;
+        border: 1px solid #D3D5E2;
+
+        &.mui-time-hour-select {
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+
+        &.mui-date-minute-select {
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+        }
+    }
+}
+
+.vue-daterange-picker {
+    width: 100%;
+    .reportrange-text {
+        border-radius: 4px;
+    }
+}

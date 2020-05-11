@@ -1,0 +1,61 @@
+﻿.mui-switch-button {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 0;
+    vertical-align: middle;
+    user-select: none;
+    font-size: 10px;
+    cursor: pointer;
+
+    &__input {
+        display: none;
+    }
+
+    &__label {
+        position: absolute;
+        top: 0;
+        font-weight: 600;
+        color: $mui-color-white1;
+    }
+
+    &__label.switch-button--left {
+        left: 10px;
+    }
+
+    &__label.switch-button--right {
+        right: 10px;
+    }
+
+    &__core {
+        display: block;
+        position: relative;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        outline: 0;
+        margin: 0;
+        transition: box-shadow ease-in-out 0.15s, background-color ease-in-out 0.15s;
+        user-select: none;
+        box-shadow: 0 0 0 1px $mui-color-gray;
+
+        .switch-core__button {
+            display: block;
+            position: absolute;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            transform: translate3d(0, 0, 0);
+            border-radius: 100%;
+            background-color: $mui-color-white1;
+            box-shadow: 0 0 1px 1px rgba(0,0,0,0.25);
+        }
+    }
+
+    &--toggled &__core {
+        box-shadow: 0 0 0 1px $mui-color-green;
+    }
+
+    &--disabled {
+        pointer-events: none;
+        opacity: 0.6;
+    }
+}

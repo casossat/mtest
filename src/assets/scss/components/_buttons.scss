@@ -1,0 +1,96 @@
+﻿.m-button {
+    position: relative;
+    display: inline-block;
+    min-width: 100px;
+    text-transform: capitalize;
+    border-radius: $border-radius;
+    font-weight: 500;
+    border: 1px solid $masiv-dark;
+    -webkit-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+    padding: 5px 1.5rem;
+    height: 34px;
+
+    &:disabled {
+        cursor: not-allowed;
+    }
+
+    &--success {
+        background-color: $masiv-green;
+        border: 1px solid $masiv-green;
+        color: #FFF;
+
+        &:hover:not([disabled]) {
+            background-color: $masiv-green-hover;
+            border: 1px solid $masiv-green-hover;
+        }
+    }
+
+    &--primary {
+        background-color: $masiv-blue;
+        border: 1px solid $masiv-blue;
+        color: #FFF;
+
+        &:hover:not([disabled]) {
+            background-color: $masiv-blue-hover;
+            border: 1px solid $masiv-blue-hover;
+        }
+    }
+
+    &--light {
+        background: #FFF;
+        border: 1px solid $masiv-dark;
+        color: $masiv-dark;
+
+        &:hover:not([disabled]) {
+            background-color: $masiv-dark;
+            color: #FFF;
+        }
+    }
+
+    &--dark {
+        background-color: $masiv-dark;
+        border: 1px solid $masiv-dark;
+        color: #FFF;
+
+        &:hover:not([disabled]) {
+            background-color: $masiv-dark-hover;
+            color: #FFF;
+        }
+    }
+
+    &--light-blue {
+        background-color: #FFF;
+        border: 1px solid $masiv-blue;
+        color: $masiv-blue;
+
+        &:hover:not([disabled]) {
+            background-color: $masiv-blue;
+            color: #FFF;
+        }
+    }
+
+    &--danger {
+        background-color: $masiv-red;
+        border: 1px solid $masiv-red;
+        color: #FFF;
+
+        &:hover:not([disabled]) {
+            background-color: $masiv-red-hover;
+            border: 1px solid $masiv-red-hover;
+        }
+    }
+
+    &--default {
+        background-color: #FFF;
+        border: 1px solid $masiv-gray;
+        color: $masiv-dark-gray;
+
+        &:hover:not([disabled]) {
+            background-color: $masiv-gray-hover;
+            border: 1px solid $masiv-gray-hover;
+            color: #FFF;
+        }
+    }
+}

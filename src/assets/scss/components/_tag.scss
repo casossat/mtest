@@ -1,0 +1,23 @@
+﻿.m-report-group-tag {
+    &-number{
+        color: $masiv-blue;
+        font-weight: 600;
+    }
+
+    &-no-style{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+}
+
+.m-report-tag {
+    background-color: $masiv-blue;
+    display: inline-block;
+    color: #fff;
+    border-radius: 25px;
+    padding: 4px 8px;
+    font-size: 11px;
+    margin-right: 5px;
+}
