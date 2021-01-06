@@ -12,7 +12,7 @@
         "@fortawesome/fontawesome-svg-core": "1.2.22",
         "@fortawesome/free-solid-svg-icons": "5.10.2",
         "@fortawesome/vue-fontawesome": "0.1.6",
-        "axios": "^0.19.2",
+        "axios": "^0.21.1",
         "core-js": "^3.6.4",
         "moment": "^2.25.3",
         "v-calendar": "^1.0.0-beta.23",
