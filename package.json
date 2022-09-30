@@ -8,7 +8,7 @@
     },
     "dependencies": {
         "@alfsnd/vue-bootstrap-select": "^0.4.4",
-        "@amcharts/amcharts4": "^4.9.19",
+        "@amcharts/amcharts4": "^4.10.28",
         "@fortawesome/fontawesome-svg-core": "1.2.22",
         "@fortawesome/free-solid-svg-icons": "5.10.2",
         "@fortawesome/vue-fontawesome": "0.1.6",
